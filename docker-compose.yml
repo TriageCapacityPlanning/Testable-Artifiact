@@ -24,7 +24,7 @@ services:
     container_name: database
     build: ./Backend/data/
     environment:
-      POSTGRES_PASSWORD: docker
+      POSTGRES_PASSWORD: password
       POSTGRES_USER: admin
       POSTGRES_DB: triage
     ports:
@@ -33,9 +33,13 @@ services:
   ml:
     container_name: ml
     build: ./ML
+    environment:
+      TRIAGE_API_URL: http://localhost:5000
     ports:
       - "6006:6006"
     depends_on: 
-      - db
+      - app
+    command:
+      bash -c "triage-gendata -m random_cyclic -sd 2015-01-01 -ed 2020-12-31 && triage-train -m radius_variance -c 1 -s 2 -e 50 -d generated_data.txt -p true"
 
 
