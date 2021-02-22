@@ -25,7 +25,7 @@ class ClinicData:
     DATABASE_DATA = {
         'database': 'triage',
         'user': 'admin',
-        'password': 'password',
+        'password': 'docker',
         'host': 'db',
         'port': '5432'
     }
