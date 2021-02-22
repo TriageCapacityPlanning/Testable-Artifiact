@@ -34,7 +34,7 @@ services:
     container_name: ml
     build: ./ML
     environment:
-      TRIAGE_API_URL: http://localhost:5000
+      TRIAGE_API_URL: http://api:5000
     ports:
       - "6006:6006"
     depends_on: 
