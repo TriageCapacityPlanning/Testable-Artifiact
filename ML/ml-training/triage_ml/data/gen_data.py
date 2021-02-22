@@ -6,15 +6,20 @@ from datetime import datetime, timedelta
 from triage_ml.data.dataset import DataSet
 import triage_ml.data.visualizations as visualizations
 
-
-SEVERITY_PROBS = [0.1, 0.4, 1.0]
+# Replaced with a range for now
+# SEVERITY_PROBS = [0.1, 0.4, 1.0]
 
 
 def get_random_severity():
-    ran = random.random()
-    for i in range(len(SEVERITY_PROBS)):
-        if ran < SEVERITY_PROBS[i]:
-            return i
+    ran = random.randint(1, 100)
+    if ran < 10:
+        return 1
+    elif ran < 30:
+        return 2
+    elif ran < 65:
+        return 3
+    else:
+        return 4
 
 
 def cyclic(start_date: datetime, end_date: datetime, random_multiple=0) -> DataSet:

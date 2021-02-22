@@ -38,8 +38,8 @@ services:
     ports:
       - "6006:6006"
     depends_on: 
-      - app
+      - api
     command:
-      bash -c "triage-gendata -m random_cyclic -sd 2015-01-01 -ed 2020-12-31 && triage-train -m radius_variance -c 1 -s 2 -e 50 -d generated_data.txt -p true"
+      bash -c "triage-gendata -m random_cyclic -sd 2015-01-01 -ed 2020-12-31 && triage-train -m radius_variance -c 1 -s 1 -e 50 -d generated_data.txt -p true && triage-train -m radius_variance -c 1 -s 2 -e 50 -d generated_data.txt -p true && triage-train -m radius_variance -c 1 -s 3 -e 50 -d generated_data.txt -p true && triage-train -m radius_variance -c 1 -s 4 -e 50 -d generated_data.txt -p true"
 
 
