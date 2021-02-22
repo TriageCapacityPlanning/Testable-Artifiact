@@ -1,7 +1,7 @@
 FROM node:latest
-WORKDIR /src/app
-ENV PATH /app/node_modules
-RUN ng build --prod
-CMD 
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
+RUN npm install -g @angular/cli
+COPY . .
 
 
