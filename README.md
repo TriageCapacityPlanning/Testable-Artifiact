@@ -14,7 +14,7 @@ git clone https://github.com/TriageCapacityPlanning/Triage-Testable-Artifact.git
 ```bash
 docker-compose up --build -d
 ```
-then when the compose shows that `app` has been built open your browser to ``http://localhost:4200/interval-prediction``
+then when the compose shows that `app` has been compiled successfully, `api` has debug mode on and `ml exited with code 0` open your browser to ``http://localhost:4200/interval-prediction``
 
 
 ## Usage
