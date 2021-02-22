@@ -103,7 +103,7 @@ class TriageController:
                                                  )
             sim_result_formatted = [{'slots': sim_result[0].expected_slots,
                                   'start_date': sim_result[1][0],
-                                  'end_date': sim_result[1][0]
+                                  'end_date': sim_result[1][1]
                                   } for sim_result in zip(sim_results, self.intervals)]
             
             response[triage_class['name']] = sim_result_formatted
