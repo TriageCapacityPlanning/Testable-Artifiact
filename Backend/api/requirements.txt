@@ -1,5 +1,6 @@
 numpy
 Flask
+Flask-cors
 Flask-RESTful
 psycopg2
 webargs
