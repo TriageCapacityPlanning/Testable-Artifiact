@@ -8,7 +8,7 @@ See below for a breakdown of pages and their applications
 # Interval Prediction Page:
 ![alt text](https://github.com/TriageCapacityPlanning/Testable-Artifiact/blob/main/docs/triagepredictionUI.png "image 1")
 1. The **interval** (start date - end date) that you want to get a prediction for  
-2. Add an additional interval. For example if you wanted the breakdown of arrivals for a month week-by-week you could have an interval each week  
+2. Add an additional interval. For example if you wanted the breakdown of arrivals for a month week-by-week you could have an interval each week . **Note** intended use is for intervals to be continuous. ie if one ends on the 19th the next should start on the 20th
 3. Reset all the intervals. This will remove all intervals except the first one  
 4. Confidence level - how confident the model needs to be that it's prediction will all you to see your target proportion within a target time. The default is 95%  
 5. Select how many simulations the model should run to come up with an estimate (default is 100 and we recommend staying around this because it will take a really long time to run more)  
