@@ -24,7 +24,7 @@ services:
     container_name: database
     build: ./Backend/data/
     environment:
-      POSTGRES_PASSWORD: password
+      POSTGRES_PASSWORD: docker
       POSTGRES_USER: admin
       POSTGRES_DB: triage
     ports:
