@@ -20,5 +20,5 @@ See below for a breakdown of pages and their applications
 2. **Duration:** How soon a patient within a given triage class needs to be seen.   
 3. **proportion:** what percentage of patients within the given triage class need to be seen within the set duration  
 4. save your changes  
-5. select a csv file with historical data the model can be trained with. You can use (this one) for example  
+5. select a csv file with historical data the model can be trained with. You can use [this one](https://github.com/TriageCapacityPlanning/Triage-Testable-Artifact/blob/main/docs/generated_data.csv) for example  
 6. upload the historical data. Currently there is no visual feedback but you can check to the console to see data was uploaded correctly  
