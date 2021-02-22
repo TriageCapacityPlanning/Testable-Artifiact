@@ -7,7 +7,7 @@ See below for a breakdown of pages and their applications
 
 # Interval Prediction Page:
 ![alt text](https://github.com/TriageCapacityPlanning/Testable-Artifiact/blob/main/docs/triagepredictionUI.png "image 1")
-1. The interval (start date - end date) that you want to get a prediction for  
+1. The **interval** (start date - end date) that you want to get a prediction for  
 2. Add an additional interval. For example if you wanted the breakdown of arrivals for a month week-by-week you could have an interval each week  
 3. Reset all the intervals. This will remove all intervals except the first one  
 4. Confidence level - how confident the model needs to be that it's prediction will all you to see your target proportion within a target time. The default is 95%  
@@ -16,9 +16,9 @@ See below for a breakdown of pages and their applications
 
 # Admin: Clinic 1
 ![alt text](https://github.com/TriageCapacityPlanning/Testable-Artifiact/blob/main/docs/triageuploadUI.png "image 2")  
-1. Name: the name of the triage class, change this to update the names of classes when you get a prediction  
-2. Duration: How soon a patient within a given triage class needs to be seen.   
-3. proportion: what percentage of patients within the given triage class need to be seen within the set duration  
+1. **Name:** the name of the triage class, change this to update the names of classes when you get a prediction  
+2. **Duration:** How soon a patient within a given triage class needs to be seen.   
+3. **proportion:** what percentage of patients within the given triage class need to be seen within the set duration  
 4. save your changes  
 5. select a csv file with historical data the model can be trained with. You can use (this one) for example  
 6. upload the historical data. Currently there is no visual feedback but you can check to the console to see data was uploaded correctly  
